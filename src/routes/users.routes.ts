@@ -1,10 +1,11 @@
 import { Router } from "express"
 import multer from "multer"
 
+import uploadConfig from "../config/upload"
+
 import { UpdateUseAvatarController } from "../modules/accounts/useCases/updateUseAvatar/UpdateUseAvatarController"
 import { CreateUserController } from "../modules/accounts/useCases/createUser/CreateUserController"
-
-import uploadConfig from "../config/upload"
+import { ensureAuthenticated } from "../middlewares/ensureAuthenticated"
 
 const usersRoutes = Router()
 
@@ -16,6 +17,7 @@ const updateUseAvatarController = new UpdateUseAvatarController()
 usersRoutes.post("/", createUserController.handle)
 usersRoutes.patch(
   "/avatar",
+  ensureAuthenticated,
   uploadAvatar.single("avatar"),
   updateUseAvatarController.handle
 )
