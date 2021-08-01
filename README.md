@@ -2,7 +2,6 @@
 
 **RF** => Requisitos funcionais
 Deve ser possivel cadastrar um novo carro
-Deve ser possivel listar todas as categorias
 
 **RN** => Regras de Negocio
 Não deve ser possivel cadastrar um carro com uma placa ja existente.
