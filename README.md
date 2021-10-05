@@ -24,8 +24,6 @@ O usuario não precisa estar logado no sistema.
 
 **RF** => Requisitos funcionais
 Deve ser possivel cadastrar uma especificação para um cargo
-Deve ser possivel listar todos as especificações
-Deve ser possivel listar todos os carros
 
 **RNF** => Requisitos não funcionais
 Não deve ser possivel cadastrar uma especificação para um carro não cadastrado.
