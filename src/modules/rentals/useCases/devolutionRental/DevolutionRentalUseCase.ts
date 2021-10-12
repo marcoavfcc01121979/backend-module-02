@@ -1,8 +1,10 @@
+import { inject, injectable } from "tsyringe"
+
 import { ICarsRepository } from "@modules/cars/repositories/ICarsRepository"
 import { Rental } from "@modules/rentals/infra/typeorm/entities/Rental"
 import { IDateProvider } from "@shared/container/providers/DateProviders/IDateProvider"
 import { AppError } from "@shared/errors/AppError"
-import { inject, injectable } from "tsyringe"
+
 import { IRentalsRepository } from "../../repositories/IRentalsRepository"
 
 interface IRequest {

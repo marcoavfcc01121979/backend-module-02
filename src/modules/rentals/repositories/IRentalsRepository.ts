@@ -1,4 +1,5 @@
 import { ICreateRentalDTO } from "@modules/rentals/dtos/ICreateRentalDTO"
+
 import { Rental } from "../infra/typeorm/entities/Rental"
 
 interface IRentalsRepository {

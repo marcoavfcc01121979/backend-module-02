@@ -1,6 +1,8 @@
+import { Router } from "express"
+
 import { CreateRentalController } from "@modules/rentals/useCases/createRental/CreateRentalController"
 import { DevolutionRentalController } from "@modules/rentals/useCases/devolutionRental/DevolutionRentalController"
-import { Router } from "express"
+
 import { ensureAuthenticated } from "../middlewares/ensureAuthenticated"
 
 const rentalRoutes = Router()
